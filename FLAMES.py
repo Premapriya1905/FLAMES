@@ -2,6 +2,10 @@
 player1_name = input("Enter the name of the first person: ")
 player2_name = input("Enter the name of the second person: ")
 
+if not player1_name.isalpha() or not player2_name.isalpha():
+    print("Error: Names must contain only alphabetic characters.")
+    exit()
+
 # Remove spaces and convert to uppercase
 player1_name = player1_name.replace(" ", "").upper()
 player2_name = player2_name.replace(" ", "").upper()
